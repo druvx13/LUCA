@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How to use LUCA Free License in your projects - complete usage guide with examples.">
+    <title>Usage Guide - LUCA Free License</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">LUCA<span>.</span></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="usage.html">Usage</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="https://github.com/druvx13/LUCA" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" style="padding: 3rem 2rem;">
+        <h1>Usage Guide</h1>
+        <p class="subtitle">How to apply LUCA to your projects</p>
+    </section>
+
+    <div class="container">
+        <section class="section">
+            <h2 class="section-title">Quick Start</h2>
+            
+            <div class="cards">
+                <div class="card">
+                    <h3>Step 1: Add License File</h3>
+                    <p>Copy the LUCA license to your project root:</p>
+                    <pre><code>curl -o COPYING https://raw.githubusercontent.com/druvx13/LUCA/main/COPYING</code></pre>
+                </div>
+                
+                <div class="card">
+                    <h3>Step 2: Update Copyright</h3>
+                    <p>Replace placeholder with your info:</p>
+                    <pre><code>Copyright (C) 2026 Your Name</code></pre>
+                </div>
+                
+                <div class="card">
+                    <h3>Step 3: Add Badge (Optional)</h3>
+                    <p>Add to your README.md:</p>
+                    <pre><code>[![LUCA](https://img.shields.io/badge/License-LUCA-blue.svg)](https://github.com/druvx13/LUCA)</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Package Metadata</h2>
+            <p class="section-subtitle">Configure your package manager</p>
+            
+            <div class="card">
+                <h3>npm (package.json)</h3>
+                <pre><code>{
+  "name": "your-package",
+  "version": "1.0.0",
+  "license": "SEE LICENSE IN COPYING",
+  "author": "Your Name"
+}</code></pre>
+            </div>
+            
+            <div class="card">
+                <h3>Python (setup.py)</h3>
+                <pre><code>from setuptools import setup
+
+setup(
+    name='your-package',
+    version='1.0.0',
+    license='LUCA Free License v1.0',
+    author='Your Name',
+)</code></pre>
+            </div>
+            
+            <div class="card">
+                <h3>Python (pyproject.toml)</h3>
+                <pre><code>[project]
+name = "your-package"
+version = "1.0.0"
+license = {text = "LUCA Free License v1.0"}</code></pre>
+            </div>
+            
+            <div class="card">
+                <h3>Rust (Cargo.toml)</h3>
+                <pre><code>[package]
+name = "your-package"
+version = "1.0.0"
+license-file = "COPYING"</code></pre>
+            </div>
+            
+            <div class="card">
+                <h3>Maven (pom.xml)</h3>
+                <pre><code>&lt;licenses&gt;
+    &lt;license&gt;
+        &lt;name&gt;LUCA Free License&lt;/name&gt;
+        &lt;url&gt;https://github.com/druvx13/LUCA&lt;/url&gt;
+        &lt;distribution&gt;repo&lt;/distribution&gt;
+    &lt;/license&gt;
+&lt;/licenses&gt;</code></pre>
+            </div>
+            
+            <div class="card">
+                <h3>Composer (composer.json)</h3>
+                <pre><code>{
+    "name": "vendor/package",
+    "license": "proprietary",
+    "description": "Licensed under LUCA Free License v1.0"
+}</code></pre>
+            </div>
+        </section>
+
+        <section class="section" id="badges">
+            <h2 class="section-title">Badges</h2>
+            <p class="section-subtitle">Show your project is LUCA-licensed</p>
+            
+            <div class="card">
+                <h3>Standard Badge (Blue)</h3>
+                <p><img src="https://img.shields.io/badge/License-LUCA-blue.svg" alt="LUCA License"></p>
+                <pre><code>[![LUCA License](https://img.shields.io/badge/License-LUCA-blue.svg)](https://github.com/druvx13/LUCA)</code></pre>
+            </div>
+            
+            <div class="card">
+                <h3>Version Badge</h3>
+                <p><img src="https://img.shields.io/badge/License-LUCA%20v1.0-blue.svg" alt="LUCA License v1.0"></p>
+                <pre><code>[![LUCA License](https://img.shields.io/badge/License-LUCA%20v1.0-blue.svg)](https://github.com/druvx13/LUCA)</code></pre>
+            </div>
+            
+            <div class="card">
+                <h3>Flat Style</h3>
+                <p><img src="https://img.shields.io/badge/License-LUCA-blue.svg?style=flat" alt="LUCA License Flat"></p>
+                <pre><code>[![LUCA License](https://img.shields.io/badge/License-LUCA-blue.svg?style=flat)](https://github.com/druvx13/LUCA)</code></pre>
+            </div>
+            
+            <div class="card">
+                <h3>Flat Square Style</h3>
+                <p><img src="https://img.shields.io/badge/License-LUCA-blue.svg?style=flat-square" alt="LUCA License Flat Square"></p>
+                <pre><code>[![LUCA License](https://img.shields.io/badge/License-LUCA-blue.svg?style=flat-square)](https://github.com/druvx13/LUCA)</code></pre>
+            </div>
+            
+            <div class="card">
+                <h3>For the Badge Style</h3>
+                <p><img src="https://img.shields.io/badge/License-LUCA-blue.svg?style=for-the-badge" alt="LUCA License For the Badge"></p>
+                <pre><code>[![LUCA License](https://img.shields.io/badge/License-LUCA-blue.svg?style=for-the-badge)](https://github.com/druvx13/LUCA)</code></pre>
+            </div>
+            
+            <div class="card">
+                <h3>Custom Colors</h3>
+                <p>
+                    <img src="https://img.shields.io/badge/License-LUCA-green.svg" alt="Green" style="margin-right: 10px;">
+                    <img src="https://img.shields.io/badge/License-LUCA-red.svg" alt="Red" style="margin-right: 10px;">
+                    <img src="https://img.shields.io/badge/License-LUCA-purple.svg" alt="Purple" style="margin-right: 10px;">
+                    <img src="https://img.shields.io/badge/License-LUCA-orange.svg" alt="Orange">
+                </p>
+                <pre><code>Change 'blue' to: green, red, purple, orange, yellow, etc.</code></pre>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Source File Headers (Optional)</h2>
+            <p class="section-subtitle">Add copyright notices to your code files</p>
+            
+            <div class="card">
+                <h3>Python</h3>
+                <pre><code># Copyright (C) 2026 Your Name
+# Licensed under LUCA Free License v1.0
+# DO WHAT THE FUCK YOU WANT TO.</code></pre>
+            </div>
+            
+            <div class="card">
+                <h3>JavaScript / TypeScript</h3>
+                <pre><code>/*
+ * Copyright (C) 2026 Your Name
+ * Licensed under LUCA Free License v1.0
+ * DO WHAT THE FUCK YOU WANT TO.
+ */</code></pre>
+            </div>
+            
+            <div class="card">
+                <h3>C / C++ / Java</h3>
+                <pre><code>/*
+ * Copyright (C) 2026 Your Name
+ * Licensed under LUCA Free License v1.0
+ * DO WHAT THE FUCK YOU WANT TO.
+ */</code></pre>
+            </div>
+            
+            <div class="card">
+                <h3>Go</h3>
+                <pre><code>// Copyright (C) 2026 Your Name
+// Licensed under LUCA Free License v1.0
+// DO WHAT THE FUCK YOU WANT TO.</code></pre>
+            </div>
+            
+            <div class="card">
+                <h3>Rust</h3>
+                <pre><code>// Copyright (C) 2026 Your Name
+// Licensed under LUCA Free License v1.0
+// DO WHAT THE FUCK YOU WANT TO.</code></pre>
+            </div>
+            
+            <div class="card">
+                <h3>Ruby</h3>
+                <pre><code># Copyright (C) 2026 Your Name
+# Licensed under LUCA Free License v1.0
+# DO WHAT THE FUCK YOU WANT TO.</code></pre>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Using LUCA-Licensed Code</h2>
+            
+            <div class="features">
+                <div class="feature success">
+                    <h4 class="icon-check">Can I use it in my project?</h4>
+                    <p>Yes! Use LUCA code in any project, commercial or non-commercial.</p>
+                </div>
+                
+                <div class="feature success">
+                    <h4 class="icon-check">Can I modify it?</h4>
+                    <p>Yes! Modify it however you want with no restrictions.</p>
+                </div>
+                
+                <div class="feature success">
+                    <h4 class="icon-check">Do I need to share modifications?</h4>
+                    <p>No. Keep modifications private or release under any license.</p>
+                </div>
+                
+                <div class="feature success">
+                    <h4 class="icon-check">Do I need to include the license?</h4>
+                    <p>No, but it's good practice to acknowledge the original authors.</p>
+                </div>
+                
+                <div class="feature success">
+                    <h4 class="icon-check">Can I sublicense?</h4>
+                    <p>Yes. Distribute under a different license if you want.</p>
+                </div>
+                
+                <div class="feature success">
+                    <h4 class="icon-check">Can I use it commercially?</h4>
+                    <p>Yes! Full commercial use with zero restrictions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Best Practices</h2>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <div>
+                    <h3 style="color: var(--success-color); margin-bottom: 1rem;">✅ DO:</h3>
+                    <div class="features">
+                        <div class="feature success">
+                            <p>Include the COPYING file in your repository</p>
+                        </div>
+                        <div class="feature success">
+                            <p>Add a badge to your README for visibility</p>
+                        </div>
+                        <div class="feature success">
+                            <p>Mention the license in project description</p>
+                        </div>
+                        <div class="feature success">
+                            <p>Keep the warranty disclaimer intact</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 style="color: var(--accent-color); margin-bottom: 1rem;">❌ DON'T:</h3>
+                    <div class="features">
+                        <div class="feature">
+                            <p>Remove the warranty disclaimer (legal protection)</p>
+                        </div>
+                        <div class="feature">
+                            <p>Claim the license requires attribution (it doesn't)</p>
+                        </div>
+                        <div class="feature">
+                            <p>Misrepresent LUCA as a copyleft license</p>
+                        </div>
+                        <div class="feature">
+                            <p>Mix up LUCA with other licenses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Displaying License in Your App</h2>
+            
+            <div class="card">
+                <h3>Command-line Application</h3>
+                <pre><code>$ myapp --license
+Licensed under LUCA Free License v1.0
+DO WHAT THE FUCK YOU WANT TO.</code></pre>
+            </div>
+            
+            <div class="card">
+                <h3>Web Application Footer</h3>
+                <pre><code>&lt;footer&gt;
+  &lt;p&gt;Licensed under &lt;a href="https://github.com/druvx13/LUCA"&gt;
+    LUCA Free License v1.0
+  &lt;/a&gt;&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+            </div>
+            
+            <div class="card">
+                <h3>About Dialog</h3>
+                <pre><code>MyApp v1.0
+Copyright (C) 2026 Your Name
+Licensed under LUCA Free License v1.0
+
+DO WHAT THE FUCK YOU WANT TO.</code></pre>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Complete Checklist</h2>
+            
+            <div class="card">
+                <p style="font-size: 1.1rem; margin-bottom: 1rem;">Before releasing your LUCA-licensed project:</p>
+                <div class="features">
+                    <div class="feature">
+                        <p>☐ <code>COPYING</code> file exists in repository root</p>
+                    </div>
+                    <div class="feature">
+                        <p>☐ Copyright year and name are updated in COPYING</p>
+                    </div>
+                    <div class="feature">
+                        <p>☐ README mentions the license</p>
+                    </div>
+                    <div class="feature">
+                        <p>☐ License badge added to README (optional)</p>
+                    </div>
+                    <div class="feature">
+                        <p>☐ Package metadata updated with license info</p>
+                    </div>
+                    <div class="feature">
+                        <p>☐ No false claims about license requirements</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Example Project Structure</h2>
+            
+            <div class="card">
+                <pre><code>my-project/
+├── COPYING              # LUCA license file
+├── README.md            # With LUCA badge
+├── src/
+│   ├── main.py         # Optional: license header
+│   └── utils.py
+├── package.json        # License metadata
+└── tests/</code></pre>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Need Help?</h2>
+            
+            <div class="cards">
+                <div class="card">
+                    <h3>📖 FAQ</h3>
+                    <p>Check the frequently asked questions</p>
+                    <a href="faq.html" class="btn btn-primary" style="margin-top: 1rem;">View FAQ</a>
+                </div>
+                
+                <div class="card">
+                    <h3>ℹ️ About</h3>
+                    <p>Learn more about LUCA philosophy</p>
+                    <a href="about.html" class="btn btn-primary" style="margin-top: 1rem;">About LUCA</a>
+                </div>
+                
+                <div class="card">
+                    <h3>🐙 GitHub</h3>
+                    <p>Open issues or contribute</p>
+                    <a href="https://github.com/druvx13/LUCA" class="btn btn-primary" style="margin-top: 1rem;" target="_blank">GitHub Repo</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="card" style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); color: white; padding: 3rem; text-align: center;">
+                <h2 style="color: white; margin-bottom: 1rem;">Remember</h2>
+                <p style="font-size: 1.3rem; line-height: 1.8;">
+                    The beauty of LUCA is its simplicity. Don't overthink it.
+                </p>
+                <p style="font-size: 2rem; margin-top: 1rem; font-weight: bold;">
+                    Just DO WHAT THE FUCK YOU WANT TO. 🚀
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>LUCA License</h3>
+                <p>Liberty Unrestricted for Creative Autonomy</p>
+                <p style="margin-top: 1rem;">Version 1.0 - February 2026</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Documentation</h3>
+                <ul>
+                    <li><a href="about.html">About LUCA</a></li>
+                    <li><a href="usage.html">Usage Guide</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="https://github.com/druvx13/LUCA">GitHub Repository</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://github.com/druvx13/LUCA/blob/main/COPYING">Full License Text</a></li>
+                    <li><a href="https://github.com/druvx13/LUCA/blob/main/README.md">README</a></li>
+                    <li><a href="https://github.com/druvx13/LUCA/issues">Report Issues</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Community</h3>
+                <p>Share your LUCA-licensed projects</p>
+                <p style="margin-top: 1rem;">Licensed under LUCA v1.0</p>
+                <p style="margin-top: 0.5rem; opacity: 0.7;">DO WHAT THE FUCK YOU WANT TO.</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 LUCA Contributors | Made with ❤️ for the free software community</p>
+        </div>
+    </footer>
+</body>
+</html>
