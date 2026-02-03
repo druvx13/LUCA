@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://druvx13.github.io/LUCA/sitemap.xml
