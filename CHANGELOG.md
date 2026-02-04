@@ -35,6 +35,60 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Severability clause for legal protection
 - Self-modifiable license
 
+## Roadmap
+
+### Future Plans
+
+#### Version 1.1 (Planned)
+- [ ] Official translations (Spanish, French, German, Japanese, Chinese)
+- [ ] License compatibility matrix
+- [ ] Integration with popular license scanners
+- [ ] Template generator tool
+- [ ] Video tutorials and explanations
+
+#### Community Goals
+- [ ] OSI submission and review
+- [ ] Build community of LUCA adopters
+- [ ] Showcase projects using LUCA
+- [ ] Gather legal reviews from different jurisdictions
+- [ ] Create LUCA ambassador program
+
+#### Documentation Enhancements
+- [ ] Interactive license builder
+- [ ] Comparison tool with other licenses
+- [ ] Migration guides from other licenses
+- [ ] Industry-specific usage guides
+- [ ] Integration examples for more platforms
+
+### How to Contribute to Roadmap
+
+Have ideas for LUCA's future? We welcome:
+- Feature suggestions via GitHub issues
+- Pull requests for new functionality
+- Documentation improvements
+- Real-world use case studies
+- Legal analysis and feedback
+
+## Version History
+
+### Versioning Strategy
+
+LUCA follows semantic versioning for documentation and tools:
+- **Major (1.x.x)**: License text changes
+- **Minor (x.1.x)**: Significant documentation updates
+- **Patch (x.x.1)**: Bug fixes and minor improvements
+
+The core license text remains stable to ensure consistency.
+
+### What's Next?
+
+Stay tuned for:
+- More platform integrations
+- Community growth initiatives
+- Expanded documentation
+- Tooling improvements
+- Educational resources
+
 ---
 
 **Licensed under LUCA v1.0 - DO WHAT THE FUCK YOU WANT TO.**

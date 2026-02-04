@@ -270,6 +270,86 @@ Licensed under LUCA Free License v1.0</code></pre>
         </section>
 
         <section class="section">
+            <h2 class="section-title">Advanced Questions</h2>
+            
+            <div class="faq-item">
+                <h3>Can I use LUCA in a monorepo with multiple licenses?</h3>
+                <p><strong class="success-text">Yes.</strong> Different parts of a monorepo can have different licenses. Just clearly document which license applies to which part.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>How does LUCA handle derivative works?</h3>
+                <p>LUCA doesn't restrict derivative works at all. You can create derivatives and license them however you want, including proprietary licenses.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Can I dual-license with LUCA and another license?</h3>
+                <p><strong class="success-text">Yes.</strong> You can offer your code under LUCA and another license (e.g., commercial license for enterprise support). This is common for open-core models.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Does LUCA protect against patent trolls?</h3>
+                <p>LUCA includes an implicit patent grant, meaning contributors can't sue users for patent infringement. However, it doesn't provide the same extensive patent protections as Apache 2.0.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Can government agencies use LUCA?</h3>
+                <p><strong class="success-text">Yes.</strong> Government agencies can use LUCA-licensed code. Some might prefer more established licenses for procurement reasons, but LUCA is legally valid.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Can I mix LUCA code with GPL code?</h3>
+                <p>Technically possible but complicated. GPL requires derivatives to be GPL-licensed, which conflicts with LUCA's freedom. If you must combine them, follow GPL's requirements for the combined work.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Does LUCA work with Docker/containers?</h3>
+                <p><strong class="success-text">Yes!</strong> LUCA-licensed code works perfectly in containers. Just include the COPYING file if you want (not required).</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>What about SaaS applications?</h3>
+                <p>LUCA has no "SaaS loophole" like AGPL. You can use LUCA code in SaaS without any disclosure requirements.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Troubleshooting</h2>
+            
+            <div class="faq-item">
+                <h3>My company's legal team is concerned about LUCA</h3>
+                <p>Show them:</p>
+                <ol style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                    <li>The full license text (COPYING file)</li>
+                    <li>Comparison with other permissive licenses</li>
+                    <li>The warranty disclaimer and severability clause</li>
+                    <li>This FAQ's legal section</li>
+                </ol>
+                <p style="margin-top: 1rem;">If they remain concerned, consider MIT or Apache 2.0 instead.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>GitHub doesn't recognize my LUCA license</h3>
+                <p>GitHub may not auto-detect LUCA as it's a custom license. This is <strong>normal</strong> and doesn't affect the legal validity. The COPYING file is still recognized.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>My dependency scanner flags LUCA</h3>
+                <p>Configure your scanner to whitelist LUCA. It's as permissive as MIT but without attribution requirements, making it safe for commercial use.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Package registry rejects my LUCA package</h3>
+                <p>Use "SEE LICENSE IN COPYING" or similar for the license field. Some registries might require manual approval for custom licenses.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>I accidentally used LUCA code without knowing</h3>
+                <p><strong class="success-text">No problem!</strong> LUCA doesn't require anything from you. Just use the code and don't worry about it.</p>
+            </div>
+        </section>
+
+        <section class="section">
             <h2 class="section-title">Still Have Questions?</h2>
             
             <div class="card" style="text-align: center; padding: 3rem;">

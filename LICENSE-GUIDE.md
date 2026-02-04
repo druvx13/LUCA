@@ -184,6 +184,128 @@ Unlike many licenses, LUCA requires **nothing** from you:
 **Use LUCA** for better legal protection.  
 **Use WTFPL** for radical simplicity.
 
+### LUCA vs Unlicense
+
+| Feature | LUCA | Unlicense |
+|---------|------|-----------|
+| Approach | Licensed | Public domain |
+| Copyright | Maintained | Waived |
+| Jurisdictions | Works everywhere | May fail in some |
+| Complexity | Very simple | Very simple |
+
+**Use LUCA** for broader legal compatibility.  
+**Use Unlicense** for public domain dedication.
+
+### LUCA vs BSD
+
+| Feature | LUCA | BSD (2-Clause) |
+|---------|------|----------------|
+| Attribution | Not required | Required |
+| Copyright notice | Not required | Required |
+| Simplicity | Very simple | Simple |
+| Endorsement clause | Not addressed | Prohibited |
+
+**Use LUCA** for fewer requirements.  
+**Use BSD** for attribution with endorsement protection.
+
+## License Selection Decision Tree
+
+```
+Start: What do you want?
+
+├─ Do you want to ensure derivatives stay open source?
+│  └─ YES → Use GPL/AGPL (copyleft)
+│
+├─ Do you need explicit patent protections?
+│  └─ YES → Use Apache 2.0
+│
+├─ Do you want trademark protections?
+│  └─ YES → Use Apache 2.0 or MPL
+│
+├─ Do you require attribution?
+│  ├─ YES → Use MIT or BSD
+│  └─ NO → Continue...
+│
+├─ Do you want maximum freedom and simplicity?
+│  └─ YES → Use LUCA ✨
+│
+└─ Do you want public domain dedication?
+   └─ YES → Use Unlicense or CC0
+```
+
+## Detailed Comparisons
+
+### When LUCA is Better
+
+1. **vs MIT**: No attribution requirement
+2. **vs Apache**: Simpler, shorter
+3. **vs GPL**: No copyleft restrictions
+4. **vs WTFPL**: Better legal protections
+5. **vs Unlicense**: Works in more jurisdictions
+
+### When Other Licenses are Better
+
+1. **MIT better than LUCA**: Need established license, want attribution
+2. **Apache better than LUCA**: Need explicit patent clauses, trademark protection
+3. **GPL better than LUCA**: Want to ensure derivatives stay open
+4. **BSD better than LUCA**: Need endorsement protection clause
+5. **Unlicense better than LUCA**: Want true public domain dedication
+
+## Legal Analysis by Jurisdiction
+
+### United States
+
+LUCA is valid under US copyright law:
+- Warranty disclaimer meets legal standards
+- Severability clause is enforceable
+- Permission grant is clear
+- No public policy violations
+
+### European Union
+
+LUCA works across EU:
+- Complies with copyright directives
+- Warranty disclaimer valid
+- GDPR neutral (doesn't address data)
+- Severability ensures local adaptability
+
+### United Kingdom
+
+Post-Brexit, LUCA remains valid:
+- Meets UK copyright requirements
+- Warranty exclusions enforceable
+- Contract principles satisfied
+
+### Australia
+
+LUCA is enforceable:
+- Complies with Copyright Act 1968
+- Disclaimer meets Australian Consumer Law standards
+- Clear permission grant
+
+### Canada
+
+LUCA works under Canadian law:
+- Meets Copyright Act requirements
+- Warranty disclaimer valid
+- Quebec civil code compatible
+
+### Japan
+
+LUCA is valid:
+- Complies with Japanese Copyright Law
+- Translation available (unofficial)
+- Severability ensures enforceability
+
+### India
+
+LUCA is enforceable:
+- Meets Indian Copyright Act requirements
+- Warranty disclaimer valid
+- Growing FOSS community adoption
+
+**Note:** This is general guidance. For specific legal questions, consult local counsel.
+
 ## Resources
 
 ### Documentation
@@ -208,6 +330,74 @@ Unlike many licenses, LUCA requires **nothing** from you:
 - **Repository:** https://github.com/druvx13/LUCA
 - **Issues:** https://github.com/druvx13/LUCA/issues
 - **Discussions:** https://github.com/druvx13/LUCA/discussions
+
+## Advanced Topics
+
+### License Compatibility Matrix
+
+| LUCA + | Compatible? | Notes |
+|--------|-------------|-------|
+| MIT | ✅ Yes | Both permissive |
+| BSD | ✅ Yes | Both permissive |
+| Apache 2.0 | ✅ Yes | Both permissive |
+| GPL v2 | ⚠️ Complex | GPL is copyleft |
+| GPL v3 | ⚠️ Complex | GPL is copyleft |
+| AGPL | ⚠️ Complex | AGPL is copyleft |
+| LGPL | ✅ Generally | For library linking |
+| MPL | ✅ Yes | File-level copyleft OK |
+| WTFPL | ✅ Yes | Both maximally permissive |
+| Unlicense | ✅ Yes | Both permissive |
+| CC0 | ✅ Yes | Both permissive |
+| Proprietary | ✅ Yes | LUCA allows this |
+
+**Legend:**
+- ✅ Yes: Fully compatible
+- ⚠️ Complex: Possible but requires careful consideration
+- ❌ No: Incompatible
+
+### Combining Code
+
+When combining code with different licenses:
+
+1. **LUCA + Permissive (MIT/BSD/Apache)**: Use most restrictive terms (usually the other license)
+2. **LUCA + Copyleft (GPL)**: Must follow GPL terms for combined work
+3. **LUCA + Proprietary**: Fully allowed, can make proprietary
+4. **LUCA + LUCA**: Perfect compatibility
+
+### Inbound vs Outbound Licensing
+
+**Inbound** (accepting contributions):
+- Contributors grant you LUCA rights
+- No CLA needed
+- Implicit LUCA licensing
+
+**Outbound** (distributing):
+- You can distribute under LUCA or any other license
+- No restrictions from LUCA
+- You control distribution terms
+
+### Special Use Cases
+
+#### Academic Research
+- ✅ Perfect for research code
+- ✅ No attribution burden
+- ✅ Allows commercial use of research
+- ⚠️ Consider citation in papers (ethical, not legal)
+
+#### Government Projects
+- ✅ Suitable for government code release
+- ✅ No ongoing obligations
+- ⚠️ Some agencies prefer established licenses
+
+#### Medical/Safety Critical
+- ⚠️ Warranty disclaimer may not be sufficient
+- ⚠️ Consider specialized licenses
+- ⚠️ Regulatory compliance separate from license
+
+#### Financial Software
+- ✅ Legally permissible
+- ⚠️ Industry regulations separate from license
+- ⚠️ Audit requirements independent
 
 ## Quick Links
 

@@ -147,6 +147,26 @@ license = "LUCA Free License v1.0"
 
 Most package repositories accept custom licenses as long as they're clearly documented. Some might require you to specify "Other" or "Custom" as the license type.
 
+### Can I mix LUCA code with GPL code?
+
+Technically possible but complicated. GPL requires derivatives to be GPL-licensed, which conflicts with LUCA's freedom. If you must combine them, follow GPL's requirements for the combined work.
+
+### Does LUCA work with Docker/containers?
+
+Yes! LUCA-licensed code works perfectly in containers. Just include the COPYING file if you want (not required).
+
+### How do I handle LUCA in license compliance tools?
+
+Configure your tools to recognize LUCA as a permissive license similar to MIT but without attribution requirements. Whitelist it in your compliance policies.
+
+### Can I use LUCA for firmware?
+
+Yes! LUCA works for any software, including firmware, embedded systems, and hardware control code.
+
+### What about SaaS applications?
+
+LUCA has no "SaaS loophole" like AGPL. You can use LUCA code in SaaS without any disclosure requirements.
+
 ## Philosophical Questions
 
 ### Why create another license?
@@ -172,6 +192,22 @@ Not really. You're giving away rights to use the *code*, not rights to your *nam
 ### What if someone uses my LUCA code for evil?
 
 They can. That's the nature of true freedom. If you want to restrict use, you need a different license with ethical clauses (which may not be enforceable anyway).
+
+### Can corporations really be trusted with this much freedom?
+
+LUCA is based on trust and freedom. If you're concerned about corporate exploitation, consider copyleft licenses like GPL. LUCA is for those who prioritize freedom over control.
+
+### What about trademark protection?
+
+LUCA doesn't address trademarks. Your project name and branding remain yours. The license only covers the code itself.
+
+### Can I revoke LUCA license after releasing?
+
+No. Once you release code under LUCA, recipients have permanent rights to that version. You can change the license for future versions, but past versions remain LUCA-licensed.
+
+### What happens if LUCA becomes incompatible with new laws?
+
+The severability clause ensures that if part becomes unenforceable, the rest remains valid. The core freedom principle would persist.
 
 ## Community Questions
 
@@ -207,6 +243,79 @@ If your question isn't answered here:
 4. Open an issue on GitHub
 
 And remember: when in doubt, the license says **DO WHAT THE FUCK YOU WANT TO.** 😉
+
+## Advanced Questions
+
+### Can I use LUCA in a monorepo with multiple licenses?
+
+**Yes.** Different parts of a monorepo can have different licenses. Just clearly document which license applies to which part.
+
+### How does LUCA handle derivative works?
+
+LUCA doesn't restrict derivative works at all. You can create derivatives and license them however you want, including proprietary licenses.
+
+### What about contribution licensing?
+
+If someone contributes to your LUCA project, their contribution is under LUCA by default (unless specified otherwise). Consider adding a note about this in CONTRIBUTING.md.
+
+### Can I dual-license with LUCA and another license?
+
+**Yes.** You can offer your code under LUCA and another license (e.g., commercial license for enterprise support). This is common for open-core models.
+
+### Does LUCA protect against patent trolls?
+
+LUCA includes an implicit patent grant, meaning contributors can't sue users for patent infringement. However, it doesn't provide the same extensive patent protections as Apache 2.0.
+
+### Can government agencies use LUCA?
+
+**Yes.** Government agencies can use LUCA-licensed code. Some might prefer more established licenses for procurement reasons, but LUCA is legally valid.
+
+### How does LUCA handle license violations?
+
+Since LUCA has no requirements to violate, there are no license violations. However, the warranty disclaimer still protects the author.
+
+### Can I use LUCA for closed-source projects?
+
+LUCA is for releasing *open* code. If you want to release closed-source software, you don't need LUCA - you already have full control via copyright.
+
+### What if I want to add LUCA to an existing project?
+
+You can relicense if you own all the code or have permission from all contributors. Otherwise, you can only apply LUCA to new code you write.
+
+### How do I cite LUCA in academic papers?
+
+You can cite LUCA as:
+```
+LUCA Free License (Version 1.0). (2026). Retrieved from https://github.com/druvx13/LUCA
+```
+
+## Troubleshooting
+
+### My company's legal team is concerned about LUCA
+
+Show them:
+1. The full license text (COPYING)
+2. Comparison with other permissive licenses
+3. The warranty disclaimer and severability clause
+4. This FAQ's legal section
+
+If they remain concerned, consider MIT or Apache 2.0 instead.
+
+### GitHub doesn't recognize my LUCA license
+
+GitHub may not auto-detect LUCA as it's a custom license. This is normal and doesn't affect the legal validity. The COPYING file is still recognized.
+
+### My dependency scanner flags LUCA
+
+Configure your scanner to whitelist LUCA. It's as permissive as MIT but without attribution requirements, making it safe for commercial use.
+
+### Package registry rejects my LUCA package
+
+Use "SEE LICENSE IN COPYING" or similar for the license field. Some registries might require manual approval for custom licenses.
+
+### I accidentally used LUCA code without knowing
+
+**No problem!** LUCA doesn't require anything from you. Just use the code and don't worry about it.
 
 ---
 
