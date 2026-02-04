@@ -78,25 +78,139 @@ DO WHAT THE FUCK YOU WANT TO.
 - [About LUCA](ABOUT.md) - Philosophy and background
 - [FAQ](FAQ.md) - Frequently asked questions
 - [Usage Guide](USAGE.md) - How to apply LUCA to your projects
+- [Quick Start](QUICKSTART.md) - Get started in 5 minutes
+- [License Guide](LICENSE-GUIDE.md) - Comprehensive reference
+- [Badges](BADGES.md) - All available badge styles
+- [Contributing](CONTRIBUTING.md) - How to contribute
+- [Changelog](CHANGELOG.md) - Version history
+- [Documentation Index](INDEX.md) - Complete documentation map
 - [Full License Text](COPYING) - The complete license
 
 ## Website
 
 Visit our documentation website at: [https://druvx13.github.io/LUCA/](https://druvx13.github.io/LUCA/)
 
+The website includes:
+- Interactive license explorer
+- Searchable FAQ
+- Code examples in multiple languages
+- Badge generator
+- License comparison tool
+
 ## Community
 
 The LUCA license is designed to be truly free. If you have questions, suggestions, or want to contribute:
 
-- Open an issue on GitHub
-- Submit a pull request
-- Share your LUCA-licensed projects
+- 💬 [Open an issue](https://github.com/druvx13/LUCA/issues) - Report bugs or request features
+- 🔀 [Submit a pull request](https://github.com/druvx13/LUCA/pulls) - Contribute improvements
+- 📢 Share your LUCA-licensed projects - Help spread the word
+- 🌐 [Join discussions](https://github.com/druvx13/LUCA/discussions) - Ask questions and share ideas
+- 🐦 Share on social media with #LUCALicense
+
+### Projects Using LUCA
+
+Are you using LUCA? Let us know! We'd love to showcase projects that embrace true software freedom.
+
+### Get Help
+
+- Check the [FAQ](FAQ.md) first
+- Search [existing issues](https://github.com/druvx13/LUCA/issues)
+- Ask in [GitHub Discussions](https://github.com/druvx13/LUCA/discussions)
+- Read the [documentation](https://druvx13.github.io/LUCA/)
 
 ## License
 
 This license and its documentation are released under the LUCA Free License v1.0.
 
 Yes, we eat our own dog food. **DO WHAT THE FUCK YOU WANT TO** with this license and documentation.
+
+## Best Practices
+
+When releasing software under LUCA:
+
+✅ **Do:**
+- Include the `COPYING` file in your repository
+- Add a license badge to your README for visibility
+- Mention the license in your project description
+- Keep the warranty disclaimer intact
+
+❌ **Don't:**
+- Misrepresent LUCA as requiring attribution
+- Remove the warranty disclaimer
+- Claim LUCA is a copyleft license
+
+💡 **Optional but Recommended:**
+- Add a brief explanation of why you chose LUCA
+- Link to the LUCA repository
+- Include the license in package metadata
+- Share your project in the LUCA community
+
+## Real-World Examples
+
+### Simple Personal Project
+```markdown
+# My Awesome Tool
+
+A simple utility that does cool things.
+
+## License
+
+Licensed under LUCA Free License v1.0 - DO WHAT THE FUCK YOU WANT TO.
+```
+
+### Professional Open Source Project
+```markdown
+# Enterprise Framework
+
+A production-ready framework for building scalable applications.
+
+## License
+
+This project is licensed under the LUCA Free License v1.0.
+
+We chose LUCA because we believe in maximum freedom. You can use this 
+framework in any project, commercial or personal, with zero restrictions.
+
+[![LUCA License](https://img.shields.io/badge/License-LUCA-blue.svg)](https://github.com/druvx13/LUCA)
+```
+
+### Code Snippet or Library
+```python
+"""
+Simple utility functions for everyday tasks.
+
+Copyright (C) 2026 Your Name
+Licensed under LUCA Free License v1.0
+DO WHAT THE FUCK YOU WANT TO.
+"""
+
+def greet(name):
+    return f"Hello, {name}!"
+```
+
+## Frequently Asked Questions
+
+**Q: Is LUCA legally valid?**  
+A: Yes! While informal in tone, LUCA includes proper legal protections including warranty disclaimers and severability clauses.
+
+**Q: Can I use LUCA for commercial projects?**  
+A: Absolutely! Commercial use is fully permitted with zero restrictions.
+
+**Q: Do I need to include attribution?**  
+A: No. While appreciated, attribution is not required.
+
+For more questions, see the complete [FAQ](FAQ.md).
+
+## Support LUCA
+
+LUCA is maintained by the community and is itself LUCA-licensed. Ways to support:
+
+- ⭐ Star this repository
+- 📣 Share LUCA with others
+- 📝 Improve documentation
+- 🐛 Report issues
+- 🔀 Submit pull requests
+- 💡 Suggest improvements
 
 ---
 
