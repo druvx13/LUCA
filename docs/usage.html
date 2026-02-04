@@ -386,6 +386,252 @@ DO WHAT THE FUCK YOU WANT TO.</code></pre>
         </section>
 
         <section class="section">
+            <h2 class="section-title">CI/CD Integration</h2>
+            <p class="section-subtitle">Automate license validation in your pipelines</p>
+            
+            <div class="card">
+                <h3>GitHub Actions</h3>
+                <pre><code>name: License Check
+on: [push, pull_request]
+
+jobs:
+  license:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check LUCA License
+        run: |
+          if [ ! -f COPYING ]; then
+            echo "COPYING file not found"
+            exit 1
+          fi
+          if ! grep -q "LUCA FREE LICENSE" COPYING; then
+            echo "LUCA license text not found"
+            exit 1
+          fi</code></pre>
+            </div>
+            
+            <div class="card">
+                <h3>GitLab CI</h3>
+                <pre><code>license_check:
+  stage: test
+  script:
+    - test -f COPYING
+    - grep "LUCA FREE LICENSE" COPYING</code></pre>
+            </div>
+            
+            <div class="card">
+                <h3>Jenkins</h3>
+                <pre><code>stage('License Check') {
+    steps {
+        sh 'test -f COPYING'
+        sh 'grep "LUCA FREE LICENSE" COPYING'
+    }
+}</code></pre>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Platform-Specific Guides</h2>
+            
+            <div class="cards">
+                <div class="card">
+                    <h3>🐳 Docker</h3>
+                    <pre><code>FROM alpine:latest
+
+# Include license (optional but good practice)
+COPY COPYING /usr/share/licenses/yourapp/COPYING
+
+# Your application
+COPY app /app
+WORKDIR /app
+CMD ["./yourapp"]</code></pre>
+                </div>
+                
+                <div class="card">
+                    <h3>☸️ Kubernetes</h3>
+                    <pre><code>apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yourapp
+  labels:
+    license: LUCA-1.0
+spec:
+  template:
+    spec:
+      containers:
+      - name: app
+        image: yourapp:latest</code></pre>
+                </div>
+                
+                <div class="card">
+                    <h3>📱 iOS (CocoaPods)</h3>
+                    <pre><code>Pod::Spec.new do |s|
+  s.name = "YourLibrary"
+  s.version = "1.0.0"
+  s.license = { 
+    :type => 'Custom', 
+    :file => 'COPYING' 
+  }
+end</code></pre>
+                </div>
+                
+                <div class="card">
+                    <h3>🤖 Android (Gradle)</h3>
+                    <pre><code>android {
+    defaultConfig {
+        manifestPlaceholders = [
+            license: "LUCA-1.0"
+        ]
+    }
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Web Framework Examples</h2>
+            
+            <div class="card">
+                <h3>Express.js (Node)</h3>
+                <pre><code>const express = require('express');
+const fs = require('fs');
+const app = express();
+
+// Serve license
+app.get('/license', (req, res) => {
+  const license = fs.readFileSync('COPYING', 'utf8');
+  res.type('text/plain').send(license);
+});
+
+// Add to API responses
+app.use((req, res, next) => {
+  res.setHeader('X-License', 'LUCA-1.0');
+  next();
+});</code></pre>
+            </div>
+            
+            <div class="card">
+                <h3>Django (Python)</h3>
+                <pre><code>from django.http import HttpResponse
+
+def license_view(request):
+    with open('COPYING', 'r') as f:
+        return HttpResponse(
+            f.read(), 
+            content_type='text/plain'
+        )</code></pre>
+            </div>
+            
+            <div class="card">
+                <h3>Flask (Python)</h3>
+                <pre><code>from flask import Flask, send_file
+
+app = Flask(__name__)
+
+@app.route('/license')
+def license():
+    return send_file(
+        'COPYING', 
+        mimetype='text/plain'
+    )
+
+@app.after_request
+def add_license_header(response):
+    response.headers['X-License'] = 'LUCA-1.0'
+    return response</code></pre>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Troubleshooting</h2>
+            <p class="section-subtitle">Common issues and solutions</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <h4>Package registry rejects LUCA</h4>
+                    <p><strong>Solution:</strong> Use "SEE LICENSE IN COPYING" or specify as custom license. Some registries require manual review.</p>
+                </div>
+                
+                <div class="feature">
+                    <h4>License scanner doesn't recognize LUCA</h4>
+                    <p><strong>Solution:</strong> Add LUCA to your scanner's whitelist or configure as equivalent to MIT without attribution requirement.</p>
+                </div>
+                
+                <div class="feature">
+                    <h4>Corporate legal team blocks LUCA</h4>
+                    <p><strong>Solution:</strong> Show them the warranty disclaimer, compare with MIT, explain the severability clause. If still blocked, use MIT or Apache 2.0.</p>
+                </div>
+                
+                <div class="feature">
+                    <h4>GitHub doesn't show license badge</h4>
+                    <p><strong>Solution:</strong> GitHub may not auto-detect custom licenses. Add a badge manually using shields.io.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Migration Guides</h2>
+            
+            <div class="cards">
+                <div class="card">
+                    <h3>From MIT to LUCA</h3>
+                    <ol style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                        <li>Replace LICENSE/MIT with COPYING</li>
+                        <li>Update package.json/setup.py/etc.</li>
+                        <li>Update README badges</li>
+                        <li>Remove attribution requirements from docs</li>
+                        <li>Announce the change</li>
+                    </ol>
+                </div>
+                
+                <div class="card">
+                    <h3>From Apache 2.0 to LUCA</h3>
+                    <ol style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                        <li>Replace LICENSE with COPYING</li>
+                        <li>Remove NOTICE file (not needed)</li>
+                        <li>Update all references</li>
+                        <li>Note: Loses explicit patent grant details</li>
+                    </ol>
+                </div>
+                
+                <div class="card">
+                    <h3>From WTFPL to LUCA</h3>
+                    <ol style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                        <li>Add COPYING file (LUCA text)</li>
+                        <li>Keep existing WTFPL references as historical note</li>
+                        <li>Update documentation</li>
+                        <li>LUCA provides better legal protection</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Get Help</h2>
+            
+            <div class="cards">
+                <div class="card">
+                    <h3>📖 Documentation</h3>
+                    <p>Check out the full docs</p>
+                    <a href="faq.html" class="btn btn-primary" style="margin-top: 1rem;">Read FAQ</a>
+                </div>
+                
+                <div class="card">
+                    <h3>💬 Community</h3>
+                    <p>Ask questions and share ideas</p>
+                    <a href="https://github.com/druvx13/LUCA/discussions" class="btn btn-primary" style="margin-top: 1rem;" target="_blank">Discussions</a>
+                </div>
+                
+                <div class="card">
+                    <h3>🐙 GitHub</h3>
+                    <p>Open issues or contribute</p>
+                    <a href="https://github.com/druvx13/LUCA" class="btn btn-primary" style="margin-top: 1rem;" target="_blank">GitHub Repo</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
             <div class="card" style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); color: white; padding: 3rem; text-align: center;">
                 <h2 style="color: white; margin-bottom: 1rem;">Remember</h2>
                 <p style="font-size: 1.3rem; line-height: 1.8;">
