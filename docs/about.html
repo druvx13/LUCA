@@ -4,19 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="About LUCA Free License - Philosophy, design principles, and background.">
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website">
+    <meta property="og:url"         content="https://druvx13.github.io/LUCA/about.html">
+    <meta property="og:title"       content="About LUCA - LUCA Free License">
+    <meta property="og:description" content="The philosophy behind true software freedom - LUCA Free License.">
+    <!-- Twitter Card -->
+    <meta name="twitter:card"        content="summary">
+    <meta name="twitter:title"       content="About LUCA - LUCA Free License">
+    <meta name="twitter:description" content="The philosophy behind true software freedom.">
     <title>About LUCA - LUCA Free License</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
-        <nav>
-            <a href="index.html" class="logo">LUCA<span>.</span></a>
-            <ul>
+        <nav aria-label="Primary navigation">
+            <a href="index.html" class="logo" aria-label="LUCA home">LUCA<span>.</span></a>
+            <button class="hamburger" id="hamburger" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-menu" role="list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="usage.html">Usage</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="https://github.com/druvx13/LUCA" target="_blank">GitHub</a></li>
+                <li><a href="https://github.com/druvx13/LUCA" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             </ul>
         </nav>
     </header>
@@ -26,6 +42,7 @@
         <p class="subtitle">The philosophy behind true software freedom</p>
     </section>
 
+    <main id="main-content">
     <div class="container">
         <section class="section">
             <h2 class="section-title">Philosophy</h2>
@@ -177,7 +194,7 @@
         <section class="section">
             <h2 class="section-title">Who Should Use LUCA?</h2>
             
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+            <div class="two-col-grid">
                 <div>
                     <h3 style="color: var(--success-color); margin-bottom: 1rem;">Perfect For:</h3>
                     <div class="features">
@@ -312,6 +329,7 @@
             </div>
         </section>
     </div>
+    </main>
 
     <footer>
         <div class="footer-content">
@@ -327,16 +345,16 @@
                     <li><a href="about.html">About LUCA</a></li>
                     <li><a href="usage.html">Usage Guide</a></li>
                     <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="https://github.com/druvx13/LUCA">GitHub Repository</a></li>
+                    <li><a href="https://github.com/druvx13/LUCA" rel="noopener noreferrer">GitHub Repository</a></li>
                 </ul>
             </div>
             
             <div class="footer-section">
                 <h3>Resources</h3>
                 <ul>
-                    <li><a href="https://github.com/druvx13/LUCA/blob/main/COPYING">Full License Text</a></li>
-                    <li><a href="https://github.com/druvx13/LUCA/blob/main/README.md">README</a></li>
-                    <li><a href="https://github.com/druvx13/LUCA/issues">Report Issues</a></li>
+                    <li><a href="https://github.com/druvx13/LUCA/blob/main/COPYING" rel="noopener noreferrer">Full License Text</a></li>
+                    <li><a href="https://github.com/druvx13/LUCA/blob/main/README.md" rel="noopener noreferrer">README</a></li>
+                    <li><a href="https://github.com/druvx13/LUCA/issues" rel="noopener noreferrer">Report Issues</a></li>
                 </ul>
             </div>
             
@@ -352,5 +370,6 @@
             <p>&copy; 2026 LUCA Contributors | Made with ❤️ for the free software community</p>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
