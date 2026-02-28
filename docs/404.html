@@ -8,38 +8,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
-        <nav>
-            <a href="index.html" class="logo">LUCA<span>.</span></a>
-            <ul>
+        <nav aria-label="Primary navigation">
+            <a href="index.html" class="logo" aria-label="LUCA home">LUCA<span>.</span></a>
+            <button class="hamburger" id="hamburger" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-menu" role="list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="usage.html">Usage</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="https://github.com/druvx13/LUCA" target="_blank">GitHub</a></li>
+                <li><a href="https://github.com/druvx13/LUCA" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             </ul>
         </nav>
     </header>
 
+    <main id="main-content">
     <div class="container" style="text-align: center; padding: 6rem 2rem;">
-        <h1 style="font-size: 6rem; color: var(--primary-color); margin-bottom: 1rem;">404</h1>
-        <h2 style="font-size: 2rem; margin-bottom: 1rem;">Page Not Found</h2>
+        <h1 style="font-size: clamp(3rem, 15vw, 6rem); color: var(--primary-color); margin-bottom: 1rem;">404</h1>
+        <h2 style="font-size: clamp(1.4rem, 4vw, 2rem); margin-bottom: 1rem;">Page Not Found</h2>
         <p style="font-size: 1.2rem; margin-bottom: 2rem; color: var(--text-light);">
             The page you're looking for doesn't exist.
         </p>
         <p style="font-size: 1.5rem; font-weight: bold; margin-bottom: 2rem;">
             But you can still<br>
-            <span style="color: var(--accent-color); font-size: 2rem;">DO WHAT THE FUCK YOU WANT TO.</span>
+            <span style="color: var(--accent-color); font-size: clamp(1.4rem, 5vw, 2rem);">DO WHAT THE FUCK YOU WANT TO.</span>
         </p>
         <div class="hero-buttons">
             <a href="index.html" class="btn btn-primary">Go Home</a>
-            <a href="usage.html" class="btn btn-secondary">Usage Guide</a>
-            <a href="faq.html" class="btn btn-secondary">FAQ</a>
+            <a href="usage.html" class="btn btn-secondary" style="color: var(--primary-color); border-color: var(--primary-color);">Usage Guide</a>
+            <a href="faq.html" class="btn btn-secondary" style="color: var(--primary-color); border-color: var(--primary-color);">FAQ</a>
         </div>
         <p style="margin-top: 3rem; color: var(--text-light); font-size: 0.9rem;">
             You will be redirected to the home page in 5 seconds...
         </p>
     </div>
+    </main>
 
     <footer>
         <div class="footer-content">
@@ -55,16 +64,16 @@
                     <li><a href="about.html">About LUCA</a></li>
                     <li><a href="usage.html">Usage Guide</a></li>
                     <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="https://github.com/druvx13/LUCA">GitHub Repository</a></li>
+                    <li><a href="https://github.com/druvx13/LUCA" rel="noopener noreferrer">GitHub Repository</a></li>
                 </ul>
             </div>
             
             <div class="footer-section">
                 <h3>Resources</h3>
                 <ul>
-                    <li><a href="https://github.com/druvx13/LUCA/blob/main/COPYING">Full License Text</a></li>
-                    <li><a href="https://github.com/druvx13/LUCA/blob/main/README.md">README</a></li>
-                    <li><a href="https://github.com/druvx13/LUCA/issues">Report Issues</a></li>
+                    <li><a href="https://github.com/druvx13/LUCA/blob/main/COPYING" rel="noopener noreferrer">Full License Text</a></li>
+                    <li><a href="https://github.com/druvx13/LUCA/blob/main/README.md" rel="noopener noreferrer">README</a></li>
+                    <li><a href="https://github.com/druvx13/LUCA/issues" rel="noopener noreferrer">Report Issues</a></li>
                 </ul>
             </div>
             
@@ -80,5 +89,6 @@
             <p>&copy; 2026 LUCA Contributors | Made with ❤️ for the free software community</p>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

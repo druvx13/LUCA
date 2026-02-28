@@ -4,6 +4,30 @@ All notable changes to the LUCA Free License project will be documented in this 
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [1.1.0] - 2026-02-28
+
+### Added
+- Mobile-first hamburger navigation menu for small screens (`docs/js/main.js`)
+- Skip-to-content link for keyboard accessibility
+- Open Graph and Twitter Card meta tags on all HTML pages
+- `prefers-color-scheme` dark mode support via CSS custom properties
+- `prefers-reduced-motion` media query to respect user preferences
+- `IntersectionObserver`-based scroll-triggered animations for cards and features
+- Active page highlighting in navigation via `aria-current="page"`
+- Two extra responsive breakpoints: tablet (≤1024 px) and small-mobile (≤480 px)
+- `loading="lazy"` attribute on all badge images
+- `rel="noopener noreferrer"` on all `target="_blank"` links (security fix)
+
+### Changed
+- CSS rewritten with modern techniques: `clamp()` for fluid typography, CSS logical properties, `gap` tokens, and a consolidated `--transition` variable
+- Navigation layout now uses a proper `height: var(--nav-height)` flex container
+- Hard-coded `1fr 1fr` inline grid styles in `about.html` and `usage.html` replaced with responsive `.two-col-grid` class
+- `<main id="main-content">` semantic wrapper added to every page
+- All `<nav>` elements now carry `aria-label="Primary navigation"` and a linked `<ul id="nav-menu">`
+- `font-family` updated to include `ui-monospace` and `SFMono-Regular` in monospace stacks
+- Footer links deduplicated; each external link now carries `rel="noopener noreferrer"`
+- Hamburger button uses pure CSS transform animation (no images, no icon font)
+
 ## [1.0.0] - 2026-02-03
 
 ### Added

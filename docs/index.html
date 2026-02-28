@@ -6,23 +6,40 @@
     <meta name="description" content="LUCA Free License - Liberty Unrestricted for Creative Autonomy. A permissive free software license with maximum freedom.">
     <meta name="keywords" content="LUCA, license, free software, open source, permissive license">
     <meta name="author" content="LUCA Contributors">
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website">
+    <meta property="og:url"         content="https://druvx13.github.io/LUCA/">
+    <meta property="og:title"       content="LUCA Free License - Liberty Unrestricted for Creative Autonomy">
+    <meta property="og:description" content="The most permissive free software license. No attribution required. No copyleft. Just pure freedom.">
+    <!-- Twitter Card -->
+    <meta name="twitter:card"        content="summary">
+    <meta name="twitter:title"       content="LUCA Free License">
+    <meta name="twitter:description" content="The most permissive free software license. DO WHAT THE FUCK YOU WANT TO.">
     <title>LUCA Free License - Liberty Unrestricted for Creative Autonomy</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
-        <nav>
-            <a href="index.html" class="logo">LUCA<span>.</span></a>
-            <ul>
+        <nav aria-label="Primary navigation">
+            <a href="index.html" class="logo" aria-label="LUCA home">LUCA<span>.</span></a>
+            <button class="hamburger" id="hamburger" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-menu" role="list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="usage.html">Usage</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="https://github.com/druvx13/LUCA" target="_blank">GitHub</a></li>
+                <li><a href="https://github.com/druvx13/LUCA" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             </ul>
         </nav>
     </header>
 
+    <main id="main-content">
     <section class="hero">
         <h1>LUCA Free License</h1>
         <p class="subtitle">Liberty Unrestricted for Creative Autonomy</p>
@@ -35,7 +52,7 @@
         <div class="hero-buttons">
             <a href="#license" class="btn btn-primary">Read the License</a>
             <a href="usage.html" class="btn btn-secondary">How to Use</a>
-            <a href="https://github.com/druvx13/LUCA" class="btn btn-secondary" target="_blank">View on GitHub</a>
+            <a href="https://github.com/druvx13/LUCA" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
         </div>
     </section>
 
@@ -260,11 +277,11 @@
             <p class="section-subtitle">Show that your project is LUCA-licensed</p>
             
             <div class="badges">
-                <img src="https://img.shields.io/badge/License-LUCA-blue.svg" alt="LUCA License">
-                <img src="https://img.shields.io/badge/License-LUCA%20v1.0-blue.svg" alt="LUCA License v1.0">
-                <img src="https://img.shields.io/badge/License-LUCA-green.svg" alt="LUCA License Green">
-                <img src="https://img.shields.io/badge/License-LUCA-red.svg" alt="LUCA License Red">
-                <img src="https://img.shields.io/badge/License-LUCA-purple.svg" alt="LUCA License Purple">
+                <img src="https://img.shields.io/badge/License-LUCA-blue.svg" alt="LUCA License" loading="lazy">
+                <img src="https://img.shields.io/badge/License-LUCA%20v1.0-blue.svg" alt="LUCA License v1.0" loading="lazy">
+                <img src="https://img.shields.io/badge/License-LUCA-green.svg" alt="LUCA License Green" loading="lazy">
+                <img src="https://img.shields.io/badge/License-LUCA-red.svg" alt="LUCA License Red" loading="lazy">
+                <img src="https://img.shields.io/badge/License-LUCA-purple.svg" alt="LUCA License Purple" loading="lazy">
             </div>
             
             <div class="text-center mt-2">
@@ -272,6 +289,7 @@
             </div>
         </section>
     </div>
+    </main>
 
     <footer>
         <div class="footer-content">
@@ -287,16 +305,16 @@
                     <li><a href="about.html">About LUCA</a></li>
                     <li><a href="usage.html">Usage Guide</a></li>
                     <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="https://github.com/druvx13/LUCA">GitHub Repository</a></li>
+                    <li><a href="https://github.com/druvx13/LUCA" rel="noopener noreferrer">GitHub Repository</a></li>
                 </ul>
             </div>
             
             <div class="footer-section">
                 <h3>Resources</h3>
                 <ul>
-                    <li><a href="https://github.com/druvx13/LUCA/blob/main/COPYING">Full License Text</a></li>
-                    <li><a href="https://github.com/druvx13/LUCA/blob/main/README.md">README</a></li>
-                    <li><a href="https://github.com/druvx13/LUCA/issues">Report Issues</a></li>
+                    <li><a href="https://github.com/druvx13/LUCA/blob/main/COPYING" rel="noopener noreferrer">Full License Text</a></li>
+                    <li><a href="https://github.com/druvx13/LUCA/blob/main/README.md" rel="noopener noreferrer">README</a></li>
+                    <li><a href="https://github.com/druvx13/LUCA/issues" rel="noopener noreferrer">Report Issues</a></li>
                 </ul>
             </div>
             
@@ -312,5 +330,6 @@
             <p>&copy; 2026 LUCA Contributors | Made with ❤️ for the free software community</p>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
